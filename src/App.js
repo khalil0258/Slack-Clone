@@ -7,9 +7,8 @@ import SideBar from "./Component/SideBar";
 import Chat from "./Component/Chat";
 import Login from "./Component/Login";
 function App() {
-  require("dotenv").config();
-  // console.log(process.env.REACT_APP_API_KEY);
-  // localStorage.clear();
+  
+
   const navigation = useNavigate();
   const storage = localStorage.getItem("login");
   const [login, setLogin] = useState(null);
