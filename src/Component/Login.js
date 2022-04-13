@@ -4,9 +4,9 @@ import { signInWithPopup } from "firebase/auth";
 import styled from "styled-components";
 import { Button } from "@mui/material";
 function Login({ setLogin }) {
-  const signUp = (e) => {
+  const signUp =async (e) => {
     e.preventDefault();
-    signInWithPopup(auth, provider)
+  await    signInWithPopup(auth, provider)
       .then((result) => {
         console.log("hello");
         localStorage.setItem("login", true);
