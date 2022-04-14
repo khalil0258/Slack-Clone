@@ -3,6 +3,8 @@ import { collection, doc, getDoc, getFirestore } from "firebase/firestore";
 import { GoogleAuthProvider } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 
+
+console.log(process.API_KEY);
 const firebaseConfig = {
   apiKey: "AIzaSyAuaONOmGcXWmK6QpcNagLyCIEChjRsBc8",
   authDomain: "slack-clone-3e260.firebaseapp.com",
