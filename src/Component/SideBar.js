@@ -27,7 +27,7 @@ function SideBar() {
     <SideBarContainer>
       <SideBarHeader>
         <SideBarInfo>
-          <h2>PAPA FAM HQ</h2>
+          <h2>Slack</h2>
           <h3>
             <FiberManualRecordIcon />
             Khalil Hadjaz

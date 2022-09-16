@@ -1,18 +1,10 @@
 import firebase from "firebase/compat/app";
-import { collection, doc, getDoc, getFirestore } from "firebase/firestore";
+import { getFirestore } from "firebase/firestore";
 import { GoogleAuthProvider } from "firebase/auth";
 import { getAuth } from "firebase/auth";
 
-
-console.log(process.API_KEY);
-const firebaseConfig = {
-  apiKey: "AIzaSyAuaONOmGcXWmK6QpcNagLyCIEChjRsBc8",
-  authDomain: "slack-clone-3e260.firebaseapp.com",
-  projectId: "slack-clone-3e260",
-  storageBucket: "slack-clone-3e260.appspot.com",
-  messagingSenderId: "830105402427",
-  appId: "1:830105402427:web:22e0aafc09a85628d9301e",
-};
+// console.log(process.API_KEY);
+ 
 
 const firebaseapp = firebase.initializeApp(firebaseConfig);
 const db = getFirestore(firebaseapp);

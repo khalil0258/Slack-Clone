@@ -8,15 +8,15 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 function Header({ setLogin }) {
   const logOut = () => {
-    signOut(auth)
-      .then((result) => {
-        // console.log("siGN OUT");
-        localStorage.setItem("login", false);
-        setLogin(false);
-      })
-      .catch((err) => {
-        console.log(err.message);
-      });
+    signOut(auth);
+    // .then((result) => {
+    //   // console.log("siGN OUT");
+    //   localStorage.setItem("login", false);
+    //   setLogin(false);
+    // })
+    // .catch((err) => {
+    //   console.log(err.message);
+    // });
   };
   return (
     <HeaderContainer>

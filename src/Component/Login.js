@@ -3,14 +3,14 @@ import { auth, provider } from "../firebase";
 import { signInWithPopup } from "firebase/auth";
 import styled from "styled-components";
 import { Button } from "@mui/material";
-function Login({ setLogin }) {
+function Login() {
   const signUp =async (e) => {
     e.preventDefault();
   await    signInWithPopup(auth, provider)
       .then((result) => {
-        console.log("hello");
-        localStorage.setItem("login", true);
-        setLogin(true);
+        // console.log("hello");
+        // localStorage.setItem("login", true);
+        // setLogin(true);
       })
       .catch((err) => {
         console.log(err.message);

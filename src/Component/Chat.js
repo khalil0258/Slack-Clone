@@ -21,6 +21,7 @@ function Chat() {
   // console.log(roomDetail?.data());
   // console.log(roomMessages?.docs);
   useEffect(() => {
+    console.log("hello");
     chatRef?.current?.scrollIntoView();
   }, [roomId, loading]);
   return (
